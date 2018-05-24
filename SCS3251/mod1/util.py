@@ -1,6 +1,5 @@
-from IPython.display import HTML, display
-
 def list_to_html_table(l):
+    from IPython.display import HTML, display
     return display(HTML(
     '<table><tr>{}</tr></table>'.format(
         '</tr><tr>'.join(
